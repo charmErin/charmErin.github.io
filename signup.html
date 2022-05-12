@@ -44,96 +44,97 @@
     </style>
 </head>
 <body>
-    
-    <div id="header" class="join-membership">
-        <h1><a href="https://charmerin.github.io/" class="sign-logo">
-        <div>회원가입</div></a></h1>
-    </div>
-    <form action="" method="post">
-        <div class="container col-md-9">
-            <div id="join-user" class="join-user">
-                <div class="col-md-3">
-                    <h5><label for="user" class="form-label">아이디</label></h5>
-                    <input type="text" class="form-control" id="user" onblur="idCheck()">
-                    <!-- 5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능 -->
+    <div class="big-box">
+        <div id="header" class="join-membership">
+            <h1><a href="https://charmerin.github.io/" class="sign-logo">
+            <div>회원가입</div></a></h1>
+        </div>
+        <form action="" method="post">
+            <div class="container col-md-9">
+                <div id="join-user" class="join-user">
+                    <div class="col-md-3">
+                        <h5><label for="user" class="form-label">아이디</label></h5>
+                        <input type="text" class="form-control" id="user" onblur="idCheck()">
+                        <!-- 5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능 -->
+                    </div>
+                    <p id="idCheck"></p>
                 </div>
-                <p id="idCheck"></p>
-            </div>
 
-            <div id="join-password2" class="row">
-                <h5><label for="password" class="form-label">비밀번호</label></h5>
-                <div class="col-md-3">
-                    <input type="password" autocomplete="false" class="form-control form-input" id="password" onblur="pwCheck()">
-                        <!-- 8~16자 영문 대 소문자, 숫자, 특수문자( ),(-),(_),(!),(#),($)를 사용 가능 -->
+                <div id="join-password2" class="row">
+                    <h5><label for="password" class="form-label">비밀번호</label></h5>
+                    <div class="col-md-3">
+                        <input type="password" autocomplete="false" class="form-control form-input" id="password" onblur="pwCheck()">
+                            <!-- 8~16자 영문 대 소문자, 숫자, 특수문자( ),(-),(_),(!),(#),($)를 사용 가능 -->
+                    </div>
+                    <div id="pwShow" class="col-md-1">
+                        <h4><button onclick="eyeIcon()" style="background-color: rgb(225, 151, 39); border-color: white;"><i id="eyeIcon" class="bi bi-eye-fill" style="color:white;"></i></button></h4>
+                    </div>
+                    <p id="pwCheck"></p>
                 </div>
-                <div id="pwShow" class="col-md-1">
-                    <h4><button onclick="eyeIcon()" style="background-color: rgba(83, 166, 249, 0.816); border-color: white;"><i id="eyeIcon" class="bi bi-eye-fill" style="color:white;"></i></button></h4>
+                
+                <div id="join-name">
+                    <div class="col-md-3">
+                        <h5><label for="user" class="form-label">이름(실명)</label></h5>
+                        <input type="text" class="form-control" id="join-user-name" maxlength="20" required>
+                    </div>
+                    <p></p>
                 </div>
-                <p id="pwCheck"></p>
-            </div>
-            
-            <div id="join-name">
-                <div class="col-md-3">
-                    <h5><label for="user" class="form-label">이름(실명)</label></h5>
-                    <input type="text" class="form-control" id="join-user-name" maxlength="20" required>
-                </div>
-                <p></p>
-            </div>
 
-            <div class="row" id="birth">
-                <h5><label for="birth" class="form-label">생년월일</label></h5>
-                <div class="col-md-1">
-                    <input type="text" class="form-control" id="birth-year" placeholder="연도" onblur="birthYearCheck()" required>
+                <div class="row" id="birth">
+                    <h5><label for="birth" class="form-label">생년월일</label></h5>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="birth-year" placeholder="연도" onblur="birthYearCheck()" required>
+                    </div>
+                    <div class="col-md-auto">
+                    <select id="birth-month" class="form-select">
+                        <option selected>월</option>
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="3">3월</option>
+                            <option value="4">4월</option>
+                            <option value="5">5월</option>
+                            <option value="6">6월</option>
+                            <option value="7">7월</option>
+                            <option value="8">8월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                    </select>
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" class="form-control" id="birth-day" placeholder="일" onblur="birthDayCheck()" required>
+                    </div>
+                    <p id="birthCheck"></p>
                 </div>
-                <div class="col-md-auto">
-                <select id="birth-month" class="form-select">
-                    <option selected>월</option>
-                        <option value="1">1월</option>
-                        <option value="2">2월</option>
-                        <option value="3">3월</option>
-                        <option value="4">4월</option>
-                        <option value="5">5월</option>
-                        <option value="6">6월</option>
-                        <option value="7">7월</option>
-                        <option value="8">8월</option>
-                        <option value="9">9월</option>
-                        <option value="10">10월</option>
-                        <option value="11">11월</option>
-                        <option value="12">12월</option>
-                </select>
+                
+                <div id="join-email">
+                    <div class="col-md-3">
+                        <h5><label for="user-email" class="form-label">본인 확인 이메일(선택)</label></h5>
+                        <input type="email" class="form-control" id="user-email" maxlength="30">
+                    </div>
+                    <p></p>
                 </div>
-                <div class="col-md-1">
-                    <input type="text" class="form-control" id="birth-day" placeholder="일" onblur="birthDayCheck()" required>
+                
+                <div id="join-phone" class="row">
+                    <h5><label for="user-mobile" class="form-label">휴대전화(하이픈(-) 미포함)</label></h5>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="user-mobile" maxlength="15" onblur="mobileCheck()" placeholder="01012345678" required>
+                    </div>
+                    <div class="col-md-auto">
+                        <button type="button" class="btn btn-primary" onclick="mobileCertify()" style="background-color: rgb(225, 151, 39); border-color: white;">인증번호 받기</button>
+                        <p id="certify-number"></p>
+                    </div>
+                    <p id="mobileCheck"></p>
                 </div>
-                <p id="birthCheck"></p>
+
             </div>
-            
-            <div id="join-email">
-                <div class="col-md-3">
-                    <h5><label for="user-email" class="form-label">본인 확인 이메일(선택)</label></h5>
-                    <input type="email" class="form-control" id="user-email" maxlength="30">
-                </div>
-                <p></p>
+            <div class="col-md-center signButton">
+                <input type="button" class="btn btn-warning btn-lg" style="background-color: rgb(249, 210, 39);" value="회원가입"></button>
             </div>
-            
-            <div id="join-phone" class="row">
-                <h5><label for="user-mobile" class="form-label">휴대전화(하이픈(-) 미포함)</label></h5>
-                <div class="col-md-2">
-                    <input type="text" class="form-control" id="user-mobile" maxlength="15" onblur="mobileCheck()" placeholder="01012345678" required>
-                </div>
-                <div class="col-md-auto">
-                    <button type="button" class="btn btn-primary" onclick="mobileCertify()" style="background-color: rgb(47, 148, 249); border-color: white;">인증번호 받기</button>
-                    <p id="certify-number"></p>
-                </div>
-                <p id="mobileCheck"></p>
-            </div>
+        </form>
 
         </div>
-        <div class="col-md-center signButton">
-            <input type="button" class="btn btn-info btn-lg" style="background-color: lightblue;" value="회원가입"></button>
-        </div>
-    </form>
-
     </div>
 
 </body>
