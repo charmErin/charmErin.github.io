@@ -147,8 +147,8 @@
             idCheck.innerHTML = "사용가능한 아이디입니다.";
             idCheck.style.color = "green";
         } else {
-            idCheck.innerHTML = "<b>영문소문자(필수)</b>, 숫자, 특수문자(-),(_)만<br>"
-            idCheck.innerHTML += "사용 가능합니다.";
+            idCheck.innerHTML = "5~20자의 영문소문자<b>(필수)</b>,<br>"
+            idCheck.innerHTML += "숫자, 특수문자(-),(_)만 사용 가능합니다.";
             idCheck.style.color = "red";
         }
     }
@@ -159,7 +159,7 @@
         const pwCheck = document.getElementById("pwCheck")
 
         if(!pw.match(exp)){
-            pwCheck.innerHTML = "<b>영문소문자(필수)</b>,<br>"
+            pwCheck.innerHTML = "8~16자의 영문소문자<b>(필수)</b>,<br>"
             pwCheck.innerHTML += " 숫자, 공백( ), 특수문자(-),(_),(!),(#),($)만 사용 가능합니다.";
             pwCheck.style.color = "red";
         } else {
