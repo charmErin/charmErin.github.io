@@ -14,19 +14,29 @@
         .iconArray {
             display: flex;
         }
-        #alertMsg {
-            margin-left: 8%;
-        }
         .checkboxArray {
-            margin-left: 11%;
             display: flex;
         }
+        .box1Array {
+            margin-left: 2%;
+        }
+        .box2Array {
+            margin-left: 29%;
+        }
         input:focus {
-            color: orange;
+            accent-color: orange !important;
             border-color: orange !important;
             border: 2px solid orange !important;
-            box-shadow: 5px, 5px rgb(249, 210, 39) !important;
-            outline: none;
+            box-shadow: 2px, 2px, 2px, 2px orange !important;
+            outline: none !important;
+        }
+        input {
+            accent-color: orange !important;
+        }
+        .list3 {
+            margin-top: 8%;
+            margin-left: 15%;
+            text-align: center;
         }
     </style>
 </head>
@@ -58,18 +68,27 @@
             </div>
             <p></p>
             <div class="col-md-12 checkboxArray">
-                <div class="form-check col-md-6">
-                    <input class="fs-4 form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label fs-5" for="flexCheckDefault"> 로그인 상태 유지</label>
+                <div class="form-check col-md-6 box1Array">
+                    <input class="fs-5 form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label fs-6" for="flexCheckDefault"> 로그인 상태 유지</label>
                 </div>
-                <div class="form-check form-switch">
-                    <label class="form-check-label" for="flexSwitchCheckChecked">IP보안</label>
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <div class="form-check form-switch box2Array" >
+                    <label class="fs-6 form-check-label" for="flexSwitchCheckChecked"> IP보안</label>
+                    <input class="fs-5 form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
                 </div>
             </div>
-            <p id="alertMsg"></p>
+            <h4></h4><p id="alertMsg"></p></h4>
             <div class="d-grid gap-2 col-12 mx-auto signButton">
                 <button type="button" class="btn btn-warning btn-lg" style="background-color: rgb(249, 210, 39);" onclick="nullCheck()">로그인</button>
+            </div>
+            <div class="list3">
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">비밀번호 찾기</a>&nbsp;&nbsp;|</li>
+                      <li class="breadcrumb-item"><a href="#">아이디 찾기</a>&nbsp;&nbsp;|</li>
+                      <li class="breadcrumb-item"><a href="./signup.html"> 회원가입</a></li>
+                    </ol>
+                  </nav>
             </div>
         </div>
         </form>
@@ -85,10 +104,11 @@
             alertMsg.innerHTML = "<b>아이디</b>를 입력해 주세요.";
             alertMsg.style.color = "red";
         }
-        if(pwNullCheck == "") {
+        else if(pwNullCheck == "") {
             alertMsg.innerHTML = "<b>비밀번호</b>를 입력해 주세요.";
             alertMsg.style.color = "red";
-        } else{
+        }
+        else {
             alertMsg.innerHTML = "";
         }
     }
