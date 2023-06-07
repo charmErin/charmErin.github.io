@@ -128,9 +128,10 @@ nav a:hover { color: rgb(255, 96, 96); }
 
 
 /* skills */
-#main2 {display: flex; text-align: center; padding: 0 7em 1em 7em;}
+#main2 {display: flex; text-align: center; margin: 0 13em 1em 13em; border: 5px solid #fff;}
 #main2 div {flex: 1;}
-#main2 p {margin: 1em 0;}
+#main2 p {margin: 0.8em 0;}
+#main2 li:last-child {margin-bottom: 1em;}
 
 /* history */
 #main3 { display: flex; padding: 0 4em 1em 6em; }
