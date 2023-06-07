@@ -15,14 +15,14 @@ function createUnderline(e) {
 
 // modal
 function modalOpen(title, image, subImage1, subImage2, subImage3, subImage4) {
-    let insertTag = '<div style="display: flex;"><div style="flex: 1; text-align: center; font-size: 1.5em; font-weight: bold;">' + title + '</div>'
-                    + '<div style="flex: 0.01; font-size: 2em; font-weight: bold; cursor: pointer; transform: translateY(-20px);">X</div></div>'
+    let insertTag = '<div style="display: flex; margin-bottom:1em;"><div style="flex: 1; text-align: center; font-size: 2.5em; font-weight: bold;">' + title + '</div>'
+                    + '<div style="flex: 0.01; font-size: 2.5em; font-weight: bold; cursor: pointer; transform: translateY(-20px);">X</div></div>'
                     + '<img src="' + image + '">';
     if (subImage1 != null) {
-        insertTag += '<br><br><img src="' + subImage1 + '">'
-                    + '<br><br><img src="' + subImage2 + '">'
-                    + '<br><br><img src="' + subImage3 + '">'
-                    + '<br><br><img src="' + subImage4 + '">';
+        insertTag += '<img style="margin-top: 2em;" src="' + subImage1 + '">'
+                    + '<img style="margin-top: 2em;" src="' + subImage2 + '">'
+                    + '<img style="margin-top: 2em;" src="' + subImage3 + '">'
+                    + '<img style="margin-top: 2em;" src="' + subImage4 + '">';
     }
 
     $('body').css('overflow', 'hidden');
