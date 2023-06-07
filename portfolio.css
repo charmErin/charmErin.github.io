@@ -29,6 +29,8 @@
     font-family: 'SlowSlow';
 }
 
+html {scroll-behavior: smooth;}
+
 /* scrollbar */
 body::-webkit-scrollbar {
     display: none;
