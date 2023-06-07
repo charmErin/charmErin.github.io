@@ -103,11 +103,12 @@ nav a:hover { color: rgb(255, 96, 96); }
     border-radius: 10px;
     box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
     transform: translateX(-50%) translateY(-50%);
-    max-height: 45em;
+    max-height: 45.5em;
     overflow-y: auto;
 }
 
-.modal_contents img { max-width:60em; max-height: 40em; }
+.modal_contents img { max-width:60em; max-height: 40em; margin: 2em 0;}
+.modal_contents hr {background-color: gray; margin: 0;}
 
 .modal_open { display: block; }
 
