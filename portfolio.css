@@ -119,7 +119,7 @@ nav a:hover { color: rgb(255, 96, 96); }
     background-size: cover;
 }
 
-/* home */
+/* about me */
 #main1 {display: flex; margin: 2em 13em 1em 13em; padding: 2em; border: 5px solid #fff;}
 #main1 div {flex: 1; align-self: center;}
 #main1 div ul li:last-child {margin-bottom: 1em;}
@@ -181,8 +181,8 @@ nav a:hover { color: rgb(255, 96, 96); }
     line-height: 29px;
 }
 
-/* about */
-#about #inner_box {
+/* resolution */
+#resolution #inner_box {
     width: 600px;
     height: 300px;
     margin: 4em auto;
