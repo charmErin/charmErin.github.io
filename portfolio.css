@@ -120,7 +120,6 @@ nav a:hover { color: rgb(255, 96, 96); }
     height: 100%;
     background: url(./background_pink.jpg) no-repeat center fixed;
     background-size: cover;
-    height: 100vh;
 }
 
 /* about me */
