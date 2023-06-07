@@ -116,6 +116,7 @@ nav a:hover { color: rgb(255, 96, 96); }
     margin-top: 63px;
     height: 100%;
     background: url(./background_pink.jpg) fixed;
+    background-size: cover;
 }
 
 /* home */
