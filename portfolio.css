@@ -140,7 +140,8 @@ nav a:hover { color: rgb(255, 96, 96); }
 /* history */
 #main3 { display: flex; width: 80em; margin: 2em auto; }
 
-.section { flex: 1; margin-left: 3em; }
+.section { flex: 1; margin-left: 1.5em; margin-right: -1em; }
+.section:last-child {flex: 0.9; margin-right: 2em;}
 
 .section div { position: relative; padding: 0 0 0 48px; }
 
@@ -181,9 +182,9 @@ nav a:hover { color: rgb(255, 96, 96); }
 
 .section li {
     position: relative;
-    left: 25px;
-    width: calc(100% - 25px);
-    line-height: 29px;
+    left: 0.75em;
+    /* width: calc(100% - 0.75em); */
+    line-height: 1em;
 }
 
 /* resolution */
