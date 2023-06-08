@@ -138,7 +138,7 @@ nav a:hover { color: rgb(255, 96, 96); }
 #main2 li:last-child {margin-bottom: 1em;}
 
 /* history */
-#main3 { display: flex; width: 100em; margin: 2em auto; }
+#main3 { display: flex; width: 80em; margin: 2em auto; }
 
 .section { flex: 1; margin-left: 3em; }
 
