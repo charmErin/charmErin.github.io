@@ -118,8 +118,9 @@ nav a:hover { color: rgb(255, 96, 96); }
 .contents {
     margin-top: 78px;
     height: 100%;
-    background: url(./background_pink.jpg) no-repeat center;
-    background-size: cover;
+    background-color: #F3DFE1;
+    /* background: url(./background_pink.jpg) no-repeat center; */
+    /* background-size: cover; */
 }
 
 /* about me */
