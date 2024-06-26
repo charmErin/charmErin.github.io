@@ -5,12 +5,12 @@ let navMenus = document.querySelectorAll("nav a");
 navMenus.forEach(menu=>menu.addEventListener("click",(e)=>createUnderline(e)))
 
 function createUnderline(e) {
-    $('a').css('color', '#000');
+    $('a').css('color', '#fff');
     navUnderline.style.left = e.currentTarget.offsetLeft +"px";
     navUnderline.style.width = e.currentTarget.offsetWidth + "px";
     navUnderline.style.top = e.currentTarget.offsetTop
                             + e.currentTarget.offsetHeight + "px";
-    e.currentTarget.style.color = "rgb(255, 96, 96)";
+    e.currentTarget.style.color = "rgb(254, 151, 49)";
 }
 
 // modal
