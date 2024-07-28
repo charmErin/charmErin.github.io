@@ -24,7 +24,8 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    color:#000;
+    /* color:#000;
+     */
     list-style: none;
     font-family: 'SlowSlow';
     color: #fff;
@@ -52,7 +53,7 @@ button {
     color: #8ee7ff;
     cursor: pointer;}
     button:hover {color: #000; font-weight: bold;}
-    li {font-size: 2.1em; margin-bottom: 0.1em;}
+    li {font-size: 1.8em; margin-bottom: 0.1em;}
 
 /* header */
 .nav_bar { position: fixed; top: 0; right: 0; left: 0; z-index: 1; }
@@ -97,13 +98,13 @@ nav a:hover { color: rgb(254, 151, 49); }
     z-index: 2;
 }
 
-.modal_contents{
+.modal_contents {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50%;
+    width: 60%;
     padding: 30px;
-    text-align: center;
+    /* text-align: center; */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
@@ -112,8 +113,13 @@ nav a:hover { color: rgb(254, 151, 49); }
     overflow-y: auto;
 }
 
-.modal_contents img { max-width:60em; max-height: 40em; margin: 2em 0;}
+.modal_contents img { max-width:50em; max-height: 40em; margin: 2em 0;}
 .modal_contents hr {background-color: gray; margin: 0;}
+
+.modal_detail { display: flex;}
+.modal_detail div:first-child { flex: 1.2; }
+.modal_detail div:not(:first-child) { flex: 1; color: #000; font-size: 1.5em; margin: 2em 1em;}
+
 
 .modal_open { display: block; }
 
@@ -145,7 +151,7 @@ nav a:hover { color: rgb(254, 151, 49); }
 #main2 li:last-child {margin-bottom: 1em;}
 
 /* history */
-#main3 { display: flex; width: 115em; margin: 2em auto; }
+#main3 { display: flex; width: 100em; margin: 2em auto; }
 
 .section { flex: 1; margin-left: 1.5em; margin-right: -1em; }
 .section:last-child {flex: 0.9; margin-right: 2em;}
