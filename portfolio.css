@@ -1,7 +1,7 @@
 /* font */
 @font-face {
-    font-family: 'Dovemayo_gothic'; /* 둘기마요 */
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-family: 'Amsterdam'; /* 암스테르담 */
+    src: url('fonts/나눔손글씨_암스테르담.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,7 +56,7 @@ button {
     li {font-size: 1.8em; margin-bottom: 0.1em;}
 
 /* header */
-.nav_bar { position: fixed; top: 0; right: 0; left: 0; z-index: 1; }
+.nav_bar { position: fixed; top: 0; right: 0; left: 0; z-index: 3; }
 
 nav {
     display: flex;
@@ -95,7 +95,7 @@ nav a:hover { color: rgb(254, 151, 49); }
     height: 100%;
     display: none;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 2;
+    z-index: 4;
 }
 
 .modal_contents {
@@ -119,7 +119,7 @@ nav a:hover { color: rgb(254, 151, 49); }
 .modal_detail { display: flex; margin: 1.5em 0; }
 .modal_detail div:first-child { flex: 1.2; }
 .modal_detail div:not(:first-child) { flex: 1; color: #000; font-family: 'LeeSeoyun'; font-size: 1.25em; line-height: 1.3em; margin: 2em 1em;}
-.modal_detail div:nth-child(odd) { border: 2px solid gray; }
+.modal_detail div:nth-child(odd) { border: 2px solid gray; padding-top: 0.3em; }
 
 
 .modal_open { display: block; }
@@ -217,19 +217,22 @@ nav a:hover { color: rgb(254, 151, 49); }
 
 /* arrow */
 #arrow {
-    position: relative;
+    /* position: relative; */
     float: right;
     margin-right: 50px;
-    transform: translateY(-50px);
+    transform: translateY(45em);
     z-index: 2;
 }
 
 #arrow img {
-    position: fixed;
+    /* position: absolute; */
     width: 30px;
     height: 35px;
+    left: -2em;
+    bottom: 1em;
+    padding: 0.2em;
     border-radius: 100%;
     filter: invert(100%);
     transform: rotate(-90deg);
-    border: 3px solid;
+    border: 3px solid #000;
 }

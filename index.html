@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=0.3">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="portfolio.css">
-  <title>윤수정 PORTFOLIO</title>
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico">
+  <title>YOON PORTFOLIO</title>
 </head>
 <body>
   <!-- header -->
@@ -117,17 +119,35 @@
         <div>
           <ul>
             <span>2024.06</span>
-            <li>Yahoo Finance API 취득 및 분석 (Python)</li>
+            <li>
+              <button onclick="modalOpen('주식 분석', 'stock_analysis' , 'img/stock_analysis.png')">Yahoo Finance API 취득 및 분석 (Python)</button>
+              <div id="stock_analysis_0" style="display: none;">
+                기간: 2024.06 (1일)<br>
+                목적: <br>
+                기술: <br><br>
+                - <br>
+                - <br>
+                - <br>
+              </div>
+            </li>
             <!-- <li>아파트 실 거래가 분석 (Pandas)</li> -->
           </ul>
         </div>
         <div>
           <ul>
             <span>2024.01</span>
-            <!-- <li><button onclick="modalOpen('근속개월수', 'img/movie_app.png')">근태관리 - 근속개월수 기능 추가</button></li> -->
-            <!-- <li><button onclick="modalOpen('근로계약서', 'img/movie_app.png')">근로계약서 만료 시 재작성</button></li> -->
             <li>노임대장 - 엑셀 양식 수정</li>
-            <li>근태관리 - 근속개월수 기능 추가</li>
+            <li>
+              <button onclick="modalOpen('근속 개월 수', 'consist_month', 'img/consist_month.png')">근태관리 - 근속개월수 기능 추가</button>
+              <div id="consist_month_0" style="display: none;">
+                기간: 2024.01 (3일)<br>
+                목적: <br>
+                기술: <br><br>
+                - <br>
+                - <br>
+                - <br>
+              </div>
+            </li>
             <li>근로계약서 만료 시 재작성</li>
             <li>계약 만료 사용자 자동 비활성화</li>
             <li>근태관리 데몬 로직 보완</li>
@@ -137,6 +157,17 @@
           <ul>
             <span>2023.12</span>
             <!-- <li>근로계약기간 자동 지정 (직급 등)</li> -->
+            <li>
+              <button onclick="modalOpen('서류 요청 및 발급', 'doc_request', 'img/doc_request.png')">서류 요청 및 발급 로직 개발</button>
+              <div id="doc_request_0" style="display: none;">
+                기간: 2023.12 (2주)<br>
+                목적: <br>
+                기술: <br><br>
+                - <br>
+                - <br>
+                - <br>
+              </div>
+            </li>
             <li>사이버사령부 MDM 인사 연동 (with 마크애니)</li>
           </ul>
         </div>
@@ -154,7 +185,17 @@
           <ul>
             <span>2023.10</span>
             <li>백업 데몬 생성 (DB, 이미지)</li>
-            <li>안전사고 관련 서류 로직 개발</li>
+            <li>
+              <button onclick="modalOpen('서류 결재 로직 개발', 'doc_manage', 'img/doc_manage.png')">안전사고 관련 서류 로직 개발</button>
+              <div id="doc_manage_0" style="display: none;">
+                기간: 2023.10 (2주)<br>
+                목적: <br>
+                기술: <br><br>
+                - <br>
+                - <br>
+                - <br>
+              </div>
+            </li>
           </ul>
         </div>
         <div>
@@ -471,8 +512,6 @@
       </div>
     </div>
     <hr>
-    
-    <!-- <div id="arrow"><img src="arrow_up.png"></div> -->
 
     <div id="resolution">
       <div id="inner_box">
@@ -489,6 +528,9 @@
     </div>
     <hr>
   </div>
+
+  <!-- TOP arrow-->
+  <!-- <div id="arrow"><a href="#" style="position: fixed;"><img src="arrow_up.png"></a></div> -->
 </body>
 <script src="portfolio.js"></script>
 </html>
