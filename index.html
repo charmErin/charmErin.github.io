@@ -123,11 +123,12 @@
               <button onclick="modalOpen('주식 분석', 'stock_analysis' , 'img/stock_analysis.png')">Yahoo Finance API 취득 및 분석 (Python)</button>
               <div id="stock_analysis_0" style="display: none;">
                 기간: 2024.06 (1일)<br>
-                목적: <br>
-                기술: <br><br>
-                - <br>
-                - <br>
-                - <br>
+                목적: python으로 웹 크롤링 API 공부<br>
+                기술: python, MySQL<br><br>
+                - 야후 Finance API로 주식정보 get<br>
+                - 종목 변화 분석<br>
+                - 일정기간 동안 연속적으로 오른 종목 추출<br>
+                - 일정 비율 이상 증가한 종목 추출(1Day)<br>
               </div>
             </li>
             <!-- <li>아파트 실 거래가 분석 (Pandas)</li> -->
@@ -141,11 +142,14 @@
               <button onclick="modalOpen('근속 개월 수', 'consist_month', 'img/consist_month.png')">근태관리 - 근속개월수 기능 추가</button>
               <div id="consist_month_0" style="display: none;">
                 기간: 2024.01 (3일)<br>
-                목적: <br>
-                기술: <br><br>
-                - <br>
-                - <br>
-                - <br>
+                목적: 퇴직금 지급 대상자 선별<br>
+                기술: C#, ASP.NET, MSSQL<br><br>
+                - 출근 Day 01~59 count: 1<br>
+                - 출근 Day 60~(30일 단위) count++<br>
+                - 45일 이상 미출근 근무자 count reset<br>
+                - 일간근태현황 테이블에 컬럼 추가<br>
+                - 과거 데이터 SP 생성 후 적용<br>
+                - 신규 데이터 데몬 SP 로직 추가 후 적용<br>
               </div>
             </li>
             <li>근로계약서 만료 시 재작성</li>
@@ -161,11 +165,11 @@
               <button onclick="modalOpen('서류 요청 및 발급', 'doc_request', 'img/doc_request.png')">서류 요청 및 발급 로직 개발</button>
               <div id="doc_request_0" style="display: none;">
                 기간: 2023.12 (2주)<br>
-                목적: <br>
-                기술: <br><br>
-                - <br>
-                - <br>
-                - <br>
+                목적: 서류 발급 사항 기록 및 관리<br>
+                기술: ASP.NET, MSSQL<br><br>
+                - 접수: 근로자 발급 신청<br>
+                - 처리중: 본사 관리자 신청서 확인<br>
+                - 완료: 본사 관리자 서류 pdf 업로드<br>
               </div>
             </li>
             <li>사이버사령부 MDM 인사 연동 (with 마크애니)</li>
@@ -189,11 +193,11 @@
               <button onclick="modalOpen('서류 결재 로직 개발', 'doc_manage', 'img/doc_manage.png')">안전사고 관련 서류 로직 개발</button>
               <div id="doc_manage_0" style="display: none;">
                 기간: 2023.10 (2주)<br>
-                목적: <br>
-                기술: <br><br>
-                - <br>
-                - <br>
-                - <br>
+                목적: 관리자 등급 depth에 따른 서류 결재 웹으로 구현<br>
+                기술: ASP.NET, MSSQL<br><br>
+                - 관리자 등급: 본사/ 협력업체/ 관리감독자/ 안전관리자/ 안전보건총괄책임자<br>
+                - 등급에 따른 결재 상태: B/A/P/F/S/T<br>
+                - 다음 결재 담당자 지정 후 알림톡 전송<br>
               </div>
             </li>
           </ul>
