@@ -12,6 +12,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'nelna'; /* 낼나리지 */
+    src: url('fonts/nelnalizzychae2020.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'SlowSlow'; /* 느릿느릿체 */
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_10@1.0/SlowSlow.woff') format('woff');
     font-weight: normal;
@@ -181,7 +187,8 @@ nav a:hover { color: rgb(254, 151, 49); }
 
 .section span {
     position: relative;
-    font-size: 2.2em;
+    font-family: 'Sejong';
+    font-size: 1.4em;
     font-weight: bold;
     line-height: 1;
 }

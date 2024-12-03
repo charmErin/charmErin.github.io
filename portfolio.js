@@ -15,7 +15,7 @@ function createUnderline(e) {
 
 // modal open
 function modalOpen(title, detail_id, image, subImage1, subImage2, subImage3, subImage4) {
-    let insertTag = '<div style="display: flex;"><div style="flex: 1; text-align: center; color:#000; font-size: 2.5em; font-family: Amsterdam; font-weight: bold;">' + title + '</div>'
+    let insertTag = '<div style="display: flex;"><div style="flex: 1; text-align: center; color:#000; font-size: 2.2em; font-family: Sejong; font-weight: bold;">' + title + '</div>'
                     + '<div id="modal_close" style="flex: 0.01; color: #000; font-size: 3em; font-weight: bold; cursor: pointer; transform: translateY(-20px);">X</div></div>'
                     + '<div class="modal_detail">'
                     + '   <div><img src="' + image + '"></div>'
